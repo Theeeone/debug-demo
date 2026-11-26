@@ -1,10 +1,8 @@
 Så igennem selve øvelsen brugte jeg bare de teknikker der var med i videoen. Og hvis jeg skal forklare det lidt enklere for mig selv til fremtiden-
-Så den måde han bruger debugging og hvordan øvelsen virker, så følger man lidt systemets process step by step for at fikse de fejl som systemet oplever
-Første problem man støder på, er at skibene sidder fast i kun at generere som vandrette men ikke lodrette. Det var en fejl der var at finde i getRandomInteger funktionen
-først startede jeg debugging som han også viser i videoen, og efter at have sat breakpoint ved funktionen, kan man se at Hvor det var meningen at switch casen calculateEndPoint funktionen
-burde kunne ramme enten 1 eller 0 altid kun ramte 0. det stammer af den måde Random featuren virker. Når man har sagt at den skal give en random integer med 1 som maks.
-Så starter den egentlig fra 0 og kan kun ramme den ene enteger 0. Så derfor tilføjer vi nede i getRandomInteger funktionen et + 1 ved maxValue så den nu kan ramme enten 0 eller 1
-som ment med funktionen
+Så den måde han bruger debugging og hvordan øvelsen virker, så følger man lidt systemets process step by step for at fikse de fejl som systemet oplever.
+Nogle tricks der er rigtigt gode her, er som han også viser i videoen selvfølgelig debugging knappen generelt, men i selve debugging vinduet, "step over", "step into"
+"step out" Med disse tricks kan man følge processen trin for trin i forhold til hvornår hvad bliver aktiveret. og hvis man så bruger "step over" går man "videre" så at sige
+Med "step into" vælger du at følge videre ind i funktionen så du kan se hvad der sker hvor den er. "step out" gør så det modstatte, hvor du hopper ud af den og egentlig et "skridt tilbage"
 For opgave 2, er problemet at vores funktion for hvornår spillet skal afsluttes, er at vi skal ramme mere end 3 skud på et skib. Men siden skibene kun er 3 i længde, så sker det aldrig:)
 Så derfor sætter vi den til at være >= så at når vi har ramt skibet 3 gange, så afsluttes spillet og vi får beskeden at skibet er sunket.
 for opgave 3
